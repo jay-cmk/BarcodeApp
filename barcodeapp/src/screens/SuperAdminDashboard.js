@@ -14,8 +14,8 @@ import * as FileSystem from 'expo-file-system';
 import * as Sharing from 'expo-sharing';
 import { Buffer } from 'buffer';
 
-// const BASE_URL = 'http://localhost:5000';
-const BASE_URL = 'https://patidarbarcodedev.onrender.com';
+const BASE_URL = 'http://localhost:5000';
+// const BASE_URL = 'https://patidarbarcodedev.onrender.com';
 // const BASE_URL = 'http://35.175.71.43:5001';
 
 const isWeb = Platform.OS === 'web';

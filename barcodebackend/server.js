@@ -34,7 +34,7 @@ app.use(
 app.use(bodyParser.json({ limit: '10mb' }));
 
 app.use('/barcodes', require('./routes/generatedBarcodes'));
-  mongoose.connect('mongodb+srv://info:cC515Zi0p5UzQWGP@patidarbarcode.ila7sa6.mongodb.net/PatidarBarCodeDev', {
+  mongoose.connect('mongodb+srv://jayshankary953:80Hd9IOwsxgVdmvK@cluster0.8uucq0y.mongodb.net/Barcode?retryWrites=true&w=majority&appName=Cluster0', {
   // mongoose.connect('mongodb+srv://balmukundoptico:lets12help@job-connector.exb7v.mongodb.net/barcodeDemo', {
   // mongoose.connect('mongodb://localhost:27017/barcodeDev', {
   useNewUrlParser: true,
@@ -171,12 +171,12 @@ const setupSuperAdmin = async () => {
   try {
     const superAdmin = await User.findOne({ role: 'superadmin' });
     if (!superAdmin) {
-      const plainPassword = 'Krishnabmk@123';
+      const plainPassword = 'jay123';
       const hashedPassword = await bcrypt.hash(plainPassword, 10);
       const uniqueCode = 'SUPERADMINBMKDEMO';
       await User.create({
-        name: 'Krishna BMK',
-        mobile: '7000534581',
+        name: 'Jay',
+        mobile: '9935468659',
         password: hashedPassword,
         plainPassword,
         role: 'superadmin',
