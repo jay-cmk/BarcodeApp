@@ -15,7 +15,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 import * as ImagePicker from 'expo-image-picker';
 
 
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://barcodeapp-1-t486.onrender.com';
 // const BASE_URL = 'https://barcodedev.onrender.com';
 // const BASE_URL = 'https://patidarbarcodedev.onrender.com';
 

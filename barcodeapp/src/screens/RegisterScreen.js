@@ -9,7 +9,7 @@ import { ThemeContext } from '../ThemeContext';
 import { Ionicons } from '@expo/vector-icons';
 
 
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://barcodeapp-1-t486.onrender.com/';
 // const BASE_URL = 'https://patidarbarcodedev.onrender.com';
 // const BASE_URL = 'http://35.175.71.43:5001';
 

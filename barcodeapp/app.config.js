@@ -3,7 +3,7 @@ const withCleartextTraffic = require('./withCleartextTraffic');
 
 module.exports = {
   "expo": {
-    "name": "PatidarDevBarCode",
+    "name": "BarCode",
     "slug": "BarcodeScannerApp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -31,7 +31,7 @@ module.exports = {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.example.PatidarDevBarCode",
+      "package": "com.example.DevBarCode",
       "permissions": [
         "CAMERA",
         "INTERNET",
@@ -51,10 +51,10 @@ module.exports = {
       "expo-notifications",
       "expo-barcode-scanner"
     ],
-    "owner": "balmukundoptico",
+   
     "extra": {
       "eas": {
-        "projectId": "70d9e600-c54a-435a-b211-5b02ad66722a"
+        "projectId": "1e093677-0b04-49b4-b9e7-08efb353e4fc"
       }
     },
     "newArchEnabled": true

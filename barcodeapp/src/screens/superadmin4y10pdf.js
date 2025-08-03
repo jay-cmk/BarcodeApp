@@ -19,7 +19,7 @@ import jsPDF from 'jspdf';
 import bwipjs from 'bwip-js';
 
 
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://barcodeapp-1-t486.onrender.com';
 // const BASE_URL = 'https://barcodescane-backend.onrender.com';
 
 const isWeb = Platform.OS === 'web';

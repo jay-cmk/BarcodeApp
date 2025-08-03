@@ -143,6 +143,8 @@ const Setting = mongoose.model('Setting', SettingSchema);
 const BarcodeRange = mongoose.model('BarcodeRange', BarcodeRangeSchema);
 const PreGeneratedBarcode = mongoose.model('PreGeneratedBarcode', PreGeneratedBarcodeSchema);
 
+
+
 // Generate unique code
 const generateUniqueCode = async (name, role) => {
   if (!['user', 'admin', 'superadmin'].includes(role)) return null;
@@ -1829,6 +1831,10 @@ app.put('/settings/barcode-range', authenticateToken, checkRole(['admin', 'super
     console.error('Error updating barcode range setting:', error);
     res.status(500).json({ message: 'Server error updating barcode range setting' });
   }
+});
+
+app.use((req, res) => {
+  res.send("running server");
 });
 
 // Start the server
